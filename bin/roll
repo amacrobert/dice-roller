@@ -1,7 +1,17 @@
 #!/usr/bin/php
 <?php
 
-require __DIR__ . '/../vendor/autoload.php';
+// If this is being run from an installed requirement
+if (file_exists(__DIR__ . '/../../../autoload.php')) {
+    require __DIR__ . '/../../../autoload.php';
+}
+// If this is being run from the project repository
+elseif (file_exists(__DIR__ . '/../vendor/autoload.php')) {
+    require __DIR__ . '/../vendor/autoload.php';
+}
+else {
+    throw new Exception('Unable to locate autoload.php');
+}
 
 use AMacRobert\DiceRoller\DiceRoller;
 
