@@ -1,0 +1,19 @@
+{
+    "name": "amacrobert/dice-roller",
+    "description": "A command-line polyhedral dice roller, perfect for RPGs",
+    "authors": [
+        {
+            "name": "Andrew MacRobert",
+            "email": "andrew.macrobert@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "AMacRobert\\DiceRoller\\": "src/"
+        }
+    },
+    "require": {},
+    "bin": [
+        "bin/roll"
+    ]
+}

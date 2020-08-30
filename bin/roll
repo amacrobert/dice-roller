@@ -1,0 +1,27 @@
+#!/usr/bin/php
+<?php
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use AMacRobert\DiceRoller\DiceRoller;
+
+$args = $argv;
+unset($args[0]);
+$input = implode('', array_filter($args));
+
+// Input was given on command line; execute it and be done
+if ($input) {
+    DiceRoller::roll($input);
+}
+// No input was given; run in interactive mode until user exits
+else {
+    while(true) {
+        $input = readline('roll> ');
+        if (in_array($input, ['quit', 'exit'])) {
+            exit(0);
+        }
+
+        str_replace(' ', '', $input);
+        DiceRoller::roll($input);        
+    }
+}
