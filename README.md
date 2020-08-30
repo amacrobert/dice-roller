@@ -1,8 +1,11 @@
 # Dice Roller
+
 *Command-line polyhedral dice roller*
+
 ![CLI Dice Roller Output](https://github.com/amacrobert/dice-roller/raw/master/doc/img/dice-roller-screenshot.jpg)
 
 ## Usage
+
 Roll once:
 ```
 $ roll 3d6+2
@@ -16,6 +19,7 @@ roll> quit
 ```
 
 ## Installation
+
 1. Install globally via [Composer](https://getcomposer.org/download/):
 ```
 $ composer global require amacrobert/dice-roller
