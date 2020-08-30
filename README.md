@@ -1,6 +1,6 @@
 # Dice Roller
 *Command-line polyhedral dice roller*
-![CLI Dice Roller Output](/doc/img/dice-roller-screenshot.jpg)
+![CLI Dice Roller Output](https://github.com/amacrobert/dice-roller/raw/master/doc/img/dice-roller-screenshot.jpg)
 
 ## Usage
 Roll once:
