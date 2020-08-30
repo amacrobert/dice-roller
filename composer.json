@@ -1,6 +1,9 @@
 {
     "name": "amacrobert/dice-roller",
     "description": "A command-line polyhedral dice roller, perfect for RPGs",
+    "keywords": ["rpg","dice","die","cli"],
+    "homepage": "https://github.com/amacrobert/dice-roller",
+    "license": "MIT",
     "authors": [
         {
             "name": "Andrew MacRobert",
